@@ -8,3 +8,4 @@ services:
 
 #docker build -t mock-api .
 #docker-compose up -d
+#docker images -f "dangling=true" -q | ForEach-Object { docker rmi $_ }
