@@ -76,6 +76,12 @@ Se você preferir executar a aplicação via Docker, primeiro construa a imagem:
 docker build -t mock-api .
 ```
 
+Use esse comando para limpar a images none
+
+```bash
+docker images -f "dangling=true" -q | ForEach-Object { docker rmi $_ }
+```
+
 Depois, execute o container:
 
 ```bash
