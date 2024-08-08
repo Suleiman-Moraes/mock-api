@@ -1,0 +1,20 @@
+server:
+    port: ${SERVER_PORT:8080}
+
+spring:
+    application:
+        name: Mock API
+
+springdoc:
+    api-docs:
+        enabled: ${SWAGGER_ENABLED:true}
+    show-actuator: true
+    pathsToMatch:
+        - /**
+    swagger-ui:
+        enabled: ${SWAGGER_ENABLED:true}
+        path: /api/swagger-ui.html
+
+logging:
+    level:
+        root: ${LOG_LEVEL:INFO}

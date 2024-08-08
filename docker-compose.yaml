@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+  mock-api:
+    container_name: mock-api
+    image: mock-api
+    ports:
+      - "8080:8080"
+
+#docker build -t mock-api .
+#docker-compose up -d
