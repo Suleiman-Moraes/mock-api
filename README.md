@@ -87,7 +87,7 @@ docker run -p 8080:8080 mock-api
 A documentação da API é gerada automaticamente e pode ser acessada via Swagger UI em:
 
 ```
-http://localhost:8080/swagger-ui.html
+http://localhost:8080/api/swagger-ui.html
 ```
 
 ## Tecnologias Utilizadas
